@@ -62,7 +62,7 @@ a{
 	margin-top: 10px;
     margin-left: 60px;
 }
-.h-item{
+.header-item{
     color: #0c3e72!important;
     font-size: 16px;
     margin: 22px 22px;
@@ -70,7 +70,7 @@ a{
     text-transform: capitalize;
 }
 
-.h-item:hover{
+.header-item:hover{
 	color: #fe5c24 !important;
 }
 
@@ -158,6 +158,20 @@ a{
     text-transform: capitalize;
     border-color: transparent;
     padding: 29px 25px;
+    transition: 0.5s;
+    position: relative;
+    cursor: pointer;
+}
+
+.s-active{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #2493e0;
+    transition: 0.5s;
 }
 
 .s-form{
@@ -426,6 +440,339 @@ a{
     background-color: #2493e0;
 }
 
+.hotel{
+    width: 100%;
+    padding: 200px 0px 100px !important;
+}
+
+.h-item{
+    border-bottom: 1px solid #c4c1c1;
+}
+
+.h-item h2{
+    margin: 20px 0px !important
+}
+
+.h-item h2 a{
+    color: #0c3e72;
+    font-size: 24px !important;
+    line-height: 18px;
+    margin-bottom: 20px !important;
+}
+
+
+.h-item i{
+    color: #fe5c24;
+}
+
+.h-item span{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
+
+.h-item p{
+    font-family: "Open Sans",sans-serif;
+    line-height: 28px;
+    font-size: 14px;
+    margin: 8px 0px 20px;
+    font-weight: 400;
+    color: #0c3e72;
+}
+
+.h-item .p{
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-size: 18px;
+    color: #a2a2a2;
+}
+
+.h-item p span{
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fe5c24;   
+}
+
+.s-m-icon ul{
+    padding-left: 6px;
+}
+
+.s-m-icon ul li{
+    list-style: none;
+    background-color: rgba(255, 122, 75, .7);
+    text-align: center;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 8px;
+}
+
+.s-m-icon ul li a{
+   color: white;
+}
+
+.share a i{
+    background-color: rgba(255, 255, 255, .5);
+    text-align: center;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;    
+}    
+
+.share a{
+    color: white !important;
+}
+
+.h-img{
+    position: relative;
+}
+
+.img-hover{
+    position: absolute;
+    top: 38px;
+    right: 28px;
+}
+
+.s-m-icon{
+    transform: scaleY(0);
+    transition: 0.5s;
+}
+
+.share{
+    transform: scaleX(1);
+}
+
+.img-hover .share{
+    transition: 0.5s !important;
+}
+
+.img-hover:hover .share{
+    transform: scaleX(0);
+    transition: 0.5s;
+}
+
+.img-hover:hover .s-m-icon{
+    transform: scaleY(1);
+}
+
+.review{
+    width: 100%;
+    padding: 100px 0px;
+    margin-top: 130px;
+    background-color: #0c3e72;
+}
+
+.review-title h1{
+    padding: 0px 0px 55px;
+    font-size: 46px;
+    color: #0c3e72;
+    line-height: 1.1;
+    font-weight: 700;
+    position: relative;
+    color: #fff;
+}
+
+.r-item{
+    background-color: #0e477d;
+    padding: 35px 30px;
+}
+
+.r-item i{
+    color: #ffc962;
+}
+
+.r-item p{
+    color: #fff;
+    margin: 26px 0 32px !important;
+    font-family: "Open Sans", sans-serif;
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.r-item h5{
+    color: #fff;
+    font-size: 16px;
+}
+
+.service{
+    width: 100%;
+    padding: 70px 0px;
+}
+
+.service-c a h3{
+    font-size: 24px;
+    color: #0c3e72 !important;
+    margin: 24px 0px 4px;
+
+}
+
+.service-c p{
+    color: #a2a2a2;
+    font-family: "Open Sans",sans-serif;
+    line-height: 28px;
+    font-size: 15px;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.footer-top{
+    width: 100%;
+    padding: 70px 0px 0px;
+    background-color: #162b45;
+}
+
+
+.footer-c h4{
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.footer-item ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-item ul li a{
+    color: #fff !important;
+    transition: .3s;
+    font-size: 15px;
+}
+
+.footer-c .footer-item ul li a:hover{
+    color: #fe5c24 !important;
+    transition: 0.3s;
+}
+
+.footer-c div input{
+    height: 49px;
+    width: 80% !important;
+    font-weight: 400;
+    padding-left: 20px;
+    padding-right: 76px;
+    border-radius: 0;
+    font-size: 13px;
+    color: #999999;
+    background-color: #092742;
+    border: 0px solid transparent;
+}
+
+.footer-c div input:focus{
+    outline: none;
+}
+
+.email{
+    display: inline-block !important;
+}
+
+.send{
+    padding: 12px 17px;
+    border: none;
+    background-color: #fe5c22;
+    color: white;
+}
+
+.send a i{
+    color: white !important;
+} 
+
+
+
+.footer-c p{
+    font-size: 16px;
+    margin-top: 18px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.8;
+}
+
+.f-p{
+    font-size: 20px !important;
+    margin-top: 18px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.8;   
+}
+
+.footer-c a{
+    margin: 18px 0px;
+    color: #fe5c24 !important;
+
+}
+
+.footer-c ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.footer-c ul li a{
+    color: white !important;
+    font-size: 16px;
+    padding: 15px 0px 0px;
+    padding-right: 14px;
+    transition: 0.3s;
+}
+
+.footer-c ul li a:hover{
+    color: #fe5c24 !important;
+    transition: 0.3s;
+}
+
+.footer{
+    width: 100%;
+    background-color: #092742;
+    padding: 30px 0px;
+    margin-top: 60px;
+}
+
+.footer p{
+    color: #777;
+    font-family: "Open Sans",sans-serif;
+    line-height: 28px;
+    font-size: 16px;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+}
+
+.footer p a{
+    color: #fe5c24;
+}
+
+.review .owl-prev {
+    width: 50px;
+    height: 50px;
+    background-color: #2493e0 !important;
+    position: absolute;
+    top: -21%;
+    color: white !important;
+    line-height: 50px !important;
+    font-size: 34px !important;
+    left: 89%;
+    border-radius: 5% !important;
+}
+.review .owl-next {
+  width: 50px;
+  height: 50px;
+  line-height: 50px !important;
+  background-color: #2493e0 !important;
+  position: absolute;
+  top: -21%;
+  right: 3px;
+  color: white !important;
+  font-size: 34px !important;
+border-radius: 5% !important;  
+}
+
 .owl-theme .owl-dots .owl-dot span {
     display: none;
 }
@@ -456,4 +803,14 @@ a{
     font-size: 48px !important;
     line-height: 80px !important;
     transform: translateY(-50%);
+}
+
+.sticky{
+    width: 100%;
+    position: fixed;
+    padding: 0px;
+    background-color: white;
+    z-index: 9999;
+    top: 0;
+    left: 0;
 }
